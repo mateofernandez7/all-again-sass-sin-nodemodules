@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@import'./secciones/index.scss';
+@import'./secciones/nosotros.scss';
+@import'./secciones/galeria.scss';
+@import'./secciones/classics.scss';
+@import'./secciones/conciertos.scss';
+
+body {
+    background-image: url('https://torange.biz/photofxnew/201/HD/background-triangles-geometrical-abstract-red-polygon-dollars-201840.jpg');
+    /*-----------BACKGROUNDS DE RESRVA POR SI SE ROMPE EL URL--------  */
+    /* background-image:url('https://p4.wallpaperbetter.com/wallpaper/568/486/574/singers-xxxtentacion-wallpaper-preview.jpg'); */
+    /* background-image: url('https://t3.ftcdn.net/jpg/04/87/78/10/360_F_487781018_t38p12Uw2cKx2caLRFxEliUDhjPOhy68.jpg'); */
+    background-size: cover;
+    max-width: 1791px;
+    overflow-x: hidden;
+
+    max-width: 1810px;
+}
+.nav {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    max-height: 1000px;
+
+}
+.imglogo {
+    height: 150px;
+    width: 150px;
+    &:hover{transform: rotateZ(360deg);
+        transition: 3s;}
+}
+
+.navs {
+    margin: 54px;
+}
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.ul a {
+    padding: 40px;
+    background-color: dimgrey;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    color: whitesmoke;
+    &:hover{background-color: rgb(44, 44, 44);}
+}
+footer {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    height: 80px;
+    margin-bottom: 1rem;
+    &:hover{cursor: pointer;} 
+}
+.social-icons-container,
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border: radius 50px;
+    border: 1px solid pink;
+    background-image: url('https://www.pngfind.com/pngs/m/26-262399_png-file-svg-icono-facebook-png-blanco-transparent.png');
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    
+}
+.social-icon:hover {
+    background-color: blue;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2) {
+    background-image: url('https://w7.pngwing.com/pngs/55/510/png-transparent-bird-logo-euclidean-icon-twitter-background-computer-wallpaper-social-media-silhouette-thumbnail.png');
+}
+.social-icon:nth-of-type(3) {
+    background-image: url('https://w7.pngwing.com/pngs/343/766/png-transparent-logo-computer-icons-white-instagram-logo-desktop-wallpaper-spot-color.png');
+}
+.footer-menu-container {
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+.menu-item {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    font-family: 'Bangers', cursive;
+    &:hover{opacity: 1;}
+}
+.copyright {
+    color: white;
+    font-family: 'Bangers', cursive;
+    text-align: center;}
+    @media screen and (max-width: 1200px) {
+        /* INDEX */
+        .headerrl {
+            font-size: 40px;
+            transform: translate(0px);
+            display: inline;
+        }
+        .ul {
+            display: none;
+        }
+        /* GALERIA */
+        .h2galeria {
+            font-size: 80px;
+            display: block;
+            text-align: start;
+            transform: translate(360px);  
+        }
+        .contimggal {
+            display: inline;
+        }
+        .contimggal img {
+            width: 210px;
+            height: 210px;
+        }
+         /* NOSOTROS */
+         .headern{
+            transform: translate(60px);
+        }
+        /* contacto */
+        .mainform{  transform: translate(210px); display: flex; flex-wrap: wrap;}
+        /* conciertos-ya tiene */
+    
+    }
+    @media screen and (max-width: 800px) {
+        .nav {
+            display: none;
+        }
+        /* INDEX */
+        .headerrl {
+            font-size: 30px;
+            transform: translate(0px);
+            display: inline;
+        }
+        /* GALERIA */
+        .h2galeria {
+            font-size: 60px;
+            display: block;
+            text-align: start;
+            transform: translate(90px);
+        }
+        .contimggal {
+            display: inline;
+        }
+        .contimggal img {
+            width: 200px;
+            height: 200px;
+        }
+        /* NOSOTROS */
+        .headern{
+        transform: translate(80px);
+         text-align: start;
+        }
+        .contenedorn {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* CONTACTO */
+        .mainform{  transform: translate(0px); display: flex; flex-wrap: wrap;}
+        .form{
+            margin: 30px;
+            height:350px;
+            width: 310px;}
+    /* conciertos-ya tiene */
+    
+    }

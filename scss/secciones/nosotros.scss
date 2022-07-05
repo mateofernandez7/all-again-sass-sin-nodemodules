@@ -1,0 +1,39 @@
+.headern {
+    font-family: 'Bangers', cursive;
+    font-size: 36px;
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+    width: 800px;
+    color: whitesmoke;
+    transform: translate(500px);
+    &:hover{text-decoration: line-through;
+        cursor: pointer;}
+
+}
+.contenedorn {
+    display: flex; 
+}
+.articulo1 {
+    margin: 70px;
+    padding: 70px;
+    background-color: rgb(61, 61, 61);
+    border: solid 4px white;
+    border-radius: 20px;
+    max-width: 700px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+}
+.articulo2 {
+    margin: 70px;
+    padding: 70px;
+    background-color: rgb(61, 61, 61);
+    border: solid 4px white;
+    border-radius: 20px;
+    max-width: 700px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;}

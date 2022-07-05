@@ -1,0 +1,76 @@
+.contenedorgral{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    gap: 10px;
+}
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+}
+.contenedor-conciertos {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    border-radius: 10px;
+    height: 150px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    gap: 10px;
+    width: 200px;
+}
+.card .textos {
+    height: 100%;
+    color: red;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.banner ul {
+    list-style: none;
+}
+.banner h3 {
+    color: gray;
+    font-family: 'Bangers', cursive;
+}
+.banner ul li {
+    margin: 15px;
+    color: whitesmoke;
+    font-family: 'Bangers', cursive;
+    &:hover{cursor: pointer;
+        transform: scale(1.3);}
+}
+.banner .boton {
+    background: #FFD600;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    &:hover{background-color: red;}
+}
